@@ -39,3 +39,150 @@ luac.out
 *.x86_64
 *.hex
 
+
+
+
+
+function setvalue(address,flags,value)  local refinevalues={}  refinevalues[1]={}  refinevalues[1].address=address  refinevalues[1].flags=flags  refinevalues[1].value=value  gg.setValues(refinevalues)  end 
+
+
+function HOME()
+menu = gg.multiChoice({
+
+"🄸🅂🄻🄰🄽🄳  🄱🅈🄿🄰🅂🅂",
+"🄻🄾🄱🄱🅈  🄱🅈🄿🄰🅂🅂",
+"🄶🄰🄼🄴  🄱🅈🄿🄰🅂🅂",
+
+" E͜͡X͜͡I͜͡T͜͡ "},nil, "╔─━━━━━━━━━━━━━━━━░░ 👑 ░░━━━━━━━━━━━━━━━━─╗\n ♔🔸🆄🆂🅴 🅾🅽🅻🆈 🆆🅸🆃🅷 🅲 🅰🅻🅻🅾🅲 🆁🅰🅽🅶🅴🎭🔸♔\n🔸[ 🅸🅽🅳 🅲🅻🅰🅽]🔸 \n╚─━━━━━━━━━━━━━━━━░░  ★ ░░━━━━━━━━━━━━━━━━─╝")
+
+
+if menu == nil then else
+ if menu[1] == true then A1() end
+ if menu[2] == true then A2() end
+ if menu[3] == true then A3() end
+end
+ iBug = -1
+ end
+ 
+function A1()
+
+function setvalue(address,flags,value) local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end
+so=gg.getRangesList('libUE4.so')[1].start
+setvalue(so + " 0x1090200", 4, "h 81 96 98 00") 
+setvalue(so + " 0x10901E0",4, "h 81 96 98 00") 
+setvalue(so + " 0x10901D8",4, "h 81 96 98 00") 
+setvalue(so + " 0x10901D4",4, "h 81 96 98 00") 
+setvalue(so + " 0x1090200",4, "h 00 00 75 42") 
+setvalue(so + " 0x10901E0",4 ,"h 00 00 83 42") 
+setvalue(so + " 0x10901D8",4, "h 00 00 86 42") 
+setvalue(so + " 0x10901D4",4, "h 83 2D 1B 3D") 
+setvalue(so + " 0x5C3B60",4, "h 32 45 76 00") 
+setvalue(so + " 0x5C2DD0",4, "h 32 45 76 00") 
+setvalue(so + " 0x5C28E0",4, "h 32 45 76 00") 
+setvalue(so + " 0x5C1A60",4, "h 32 45 76 00")
+setvalue(so + " 0x5C1A40",4, "h 32 45 76 00") 
+setvalue(so + " 0x5C0ECC",4, "h 32 45 76 00") 
+setvalue(so + " 0x5C0BA0",4, "h 32 45 76 00") 
+setvalue(so + " 0x5BFDD8",4, "h 32 45 76 00") 
+setvalue(so + " 0x5BF874",4, "h 32 45 76 00") 
+setvalue(so + " 0x5BDA2C",4, "h 32 45 76 00") 
+setvalue(so + " 0x5BBA14",4, "h 32 45 76 00") 
+setvalue(so + " 0x5BB910",4, "h 32 45 76 00") 
+setvalue(so + " 0x5BB618",4, "h 32 45 76 00") 
+setvalue(so + " 0x5BA7C8",4, "h 32 45 76 00") 
+setvalue(so + " 0x5BA3E4",4, "h 32 45 76 00") 
+setvalue(so + " 0x5B98B0",4, "h 32 45 76 00") 
+setvalue(so + " 0x5B9710",4, "h 32 45 76 00") 
+setvalue(so + " 0x5B90FC",4, "h 32 45 76 00") 
+setvalue(so + " 0x5B89D0",4, "h 32 45 76 00") 
+setvalue(so + " 0x134F98",4, "h 32 45 76 00") 
+setvalue(so + " 0x134420",4, "h 32 45 76 00") 
+setvalue(so + " 0x133E18",4, "h 32 45 76 00") 
+setvalue(so + " 0x1331D0",4, "h 32 45 76 00") 
+
+so=gg.getRangesList('libgcloud.so')[1].start
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 31909, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 2902253, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 2946476, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 2946596, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 2973823, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 2982433, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 2991903, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 3002518, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 3007455, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 3050415, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 3321440, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 3341661, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 3346685, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 76553, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 76570, 0x4, 0)
+setvalue(gg.getRangesList("libgcloud.so")[1].start + 76644, 0x4, 0)
+
+gg.clearResults()
+gg.setVisible(false)
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_OTHER)
+gg.searchNumber("29793", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.getResults(9999)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+
+
+
+gg.alert (" island bypass done ") 
+end
+
+function A2()
+ gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_OTHER)
+gg.searchNumber('144,387;133634',4)
+gg.refineNumber('144,387',4)
+gg.getResults(99931)
+gg.editAll('84,149,249', 4)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_OTHER)
+gg.searchNumber('134,658;134,658',4)
+gg.refineNumber('134,658',4)
+gg.getResults(99931)
+gg.editAll('84,149,249', 4)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_OTHER)
+gg.searchNumber('134,914;262,403',4)
+gg.refineNumber('134,914',4)
+gg.getResults(99931)
+gg.editAll('84,149,249', 4)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_OTHER)
+gg.searchNumber('133,378;133,634',4)
+gg.refineNumber('133,378',4)
+gg.getResults(99931)
+gg.editAll('84,149,249', 4)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_OTHER)
+gg.searchNumber('196,864;16,842,753',4)
+gg.refineNumber('196,864',4)
+gg.getResults(99931)
+gg.editAll('84,149,249', 4)
+gg.clearResults()
+gg.alert ("lobby bypass done ") 
+end
+
+function A3()
+so=gg.getRangesList("libvalac.so")[1].start  
+py=0x2A398AC
+setvalue(so+py,16,0)
+gg.alert (" game bypass done ") 
+end
+
+function A4()
+  gg.alert("╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n ♔🔸〘𝙵𝙴𝙴𝙳𝙱𝙰𝙲𝙺〙🔸♔\n🔸 Telegram ⟮ @I_N_D_FLASH  ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+gg.alert("╔─━━━━━━━━░░ 👑 ░░━━━━━━━━─╗\n ♔🔸〘𝙼𝙾𝚁𝙴 𝚄𝙿𝙳𝙰𝚃𝙴𝚂〙🔸♔\n🔸 Telegram ⟮ @I_N_D_FLASH ⟯  🔸 \n╚─━━━━━━━━░░  ★ ░░━━━━━━━━─╝")
+os.exit()
+end::Loop::
+if gg.isVisible(true) then
+    gg.setVisible(false)
+    gg.clearResults()
+    HOME()
+end
+goto Loop
+
+
